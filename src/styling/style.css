@@ -9,11 +9,39 @@
   }
 
   .navbar-custom {
-    background-color: black !important;
-    color: white !important;
+    background-color: grey !important;
+    color: black !important;
   }
   
   .nav-link-container {
     margin-right: 20px;
   }
   
+  .fullscreen-bg {
+    background-attachment: fixed;
+    background-image: url('../foto5.jpg');
+    background-size:cover;
+    /* position:absolute; */
+    width:100%;
+    min-height: 85vh;
+  }
+
+  .content{
+    padding-top: 50px;
+    z-index:9999;
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(13px);
+    filter: blur(0px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1{
+    font-weight: bold;
+  }
+  
+  .text-white{
+    color: black !important;
+  }
