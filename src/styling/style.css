@@ -9,7 +9,7 @@
   }
 
   .navbar-custom {
-    background-color: grey !important;
+    background-color: white !important;
     color: black !important;
   }
   
@@ -23,7 +23,40 @@
     background-size:cover;
     /* position:absolute; */
     width:100%;
-    min-height: 85vh;
+    min-height: 75vh;
+  }
+
+  .fullscreen-bg-huizenprijzen {
+    background-attachment: fixed;
+    background-image: url('../foto7.png');
+    background-size:cover;
+    /* position:absolute; */
+    width:100%;
+    min-height: 60vh;
+  }
+
+  .image1-container{
+    background-image: url("../huis1.png");
+     width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .image2-container{
+    background-image: url("../huis2.png");
+     width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .image3-container{
+    background-image: url("../huis3.png");
+     width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 
   .content{
@@ -42,6 +75,6 @@
     font-weight: bold;
   }
   
-  .text-white{
+  .black-text{
     color: black !important;
   }

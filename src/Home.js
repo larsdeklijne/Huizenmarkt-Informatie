@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
     <div >
-      <div class="fullscreen-bg bg-dark p-5"><div class="content">
+      <div className="fullscreen-bg bg-dark p-5"><div className="content">
         <Row className="justify-content-center">
           <Col lg={6} md={8}>
             <h1 className="text-center">Huizenmarkt Nederland</h1>
@@ -14,15 +14,17 @@ function Home() {
         </Row>
       </div></div>
   </div>
-  <Container style={{ backgroundColor: 'grey', color: 'white', padding: '2rem', borderRadius: '10px', marginTop: '50px' }}>
-    <br></br>
-      <h1 style={{ color: 'black', textAlign: 'center' }}><b>Welkom bij onze website!</b></h1>
-    <br></br>
-      <p style={{ textAlign: 'justify' }}>Ontdek actuele informatie over hypotheekrentes, huizenprijzen en uw maximale leencapaciteit in Nederland.</p>
-      <p style={{ textAlign: 'justify' }}>Bereken uw hypotheekrente en leencapaciteit op basis van uw persoonlijke situatie en volg de actuele huizenprijzen en prijsontwikkelingen in uw regio.</p>
-      <p style={{ textAlign: 'justify' }}>Blijf op de hoogte van de ontwikkelingen op de huizenmarkt en neem de beste financiële beslissingen voor uw situatie.</p>
-    </Container>
-
+  <div style={{width: '100%'}}>
+    <Container style={{ color: 'black', padding: '2rem', borderRadius: '10px', marginTop: '10px'}}>
+        <h1 style={{ color: 'black', textAlign: 'center' }}><b>Welkom bij onze website!</b></h1>
+      <br></br>
+        <blockquote class="blockquote text-center">
+          <p style={{ textAlign: 'justify' }}>Ontdek actuele informatie over hypotheekrentes, huizenprijzen en uw maximale leencapaciteit in Nederland.</p>
+          <p style={{ textAlign: 'justify' }}>Bereken uw hypotheekrente en leencapaciteit op basis van uw persoonlijke situatie en volg de actuele huizenprijzen en prijsontwikkelingen in uw regio.</p>
+          <p style={{ textAlign: 'justify' }}>Blijf op de hoogte van de ontwikkelingen op de huizenmarkt en neem de beste financiële beslissingen voor uw situatie.</p>
+        </blockquote>
+      </Container>
+  </div>
 <br></br>
 <br></br>
 <br></br>
@@ -33,7 +35,7 @@ function Home() {
       <Row className="justify-content-center">
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/286x180" />
+            <div className="image1-container" style={{width: '100%', height: '350px'}}></div>
             <Card.Body>
               <Card.Title>Hypotheekrentes</Card.Title>
               <Card.Text>
@@ -45,7 +47,7 @@ function Home() {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/286x180" />
+            <div className="image2-container" style={{width: '100%', height: '350px'}}></div>
             <Card.Body>
               <Card.Title>Huizenprijzen</Card.Title>
               <Card.Text>
@@ -57,7 +59,7 @@ function Home() {
         </Col>
         <Col md={4}>
           <Card>
-            <Card.Img variant="top" src="https://via.placeholder.com/286x180" />
+          <div className="image3-container" style={{width: '100%', height: '350px'}}></div>
             <Card.Body>
               <Card.Title>Leencapaciteit</Card.Title>
               <Card.Text>
@@ -69,6 +71,10 @@ function Home() {
         </Col>
       </Row>
     </Container>
+    <br></br>
+    <br></br>
+    <br></br>
+
 
 </div>
   );
